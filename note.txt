@@ -59,5 +59,17 @@ shift+: q enter
    git tag -a v0.9 558151a   给提交的 558151a（几个提交之前的事情了） 追加标签 
    git tag -d v0.1.2   删除标签
 
+// --------------------- 分享与更新项目 --------------------- //
+1. git remote 列出远端别名
+   git remote -v 你还可以看到每个别名的实际链接地址
+   git remote add [alias] [url]  为你的项目添加一个新的远端仓库,将 [url] 以 [alias] 的别名添加为本地的远端仓库
+   git remote rm [alias]  删除现存的某个别名
+2. git fetch 从远端仓库下载新分支与数据
+3. git pull 从远端仓库提取数据并尝试合并到当前分支
+
+
+
+
+
 
 
