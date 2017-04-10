@@ -28,10 +28,13 @@ shift+: q enter
     [
       如果你想直接执行 git unstage，你可以在 Git 中配置个别名。 执行 git config --global alias.unstage "reset HEAD" 即可。 一旦执行完它，你就可以直接用 git unstage [file] 作为代替了。
     ]
-   git reset --hard HEAD^ / git reset --hard 558151a 与 git rm file 结果相同,会将文件从 缓存区 和你的硬盘中（工作目录）删除
+   git reset --hard HEAD^ 结果相同,会将文件中的修改去掉，回到上一步 
+   git reset --hard (commit_id)[ex:fe2599c] 回到版本 commit_id
 8. git rm
    git rm file / git rm -f file   会将文件从 缓存区 和你的硬盘中（工作目录）删除
    git rm --cached file  在工作目录中留着该文件
+
+9. git checkout -- file  让这个文件回到最近一次git commit或git add时的状态
 
 // -------------------  分支与合并 ---------------------- //
 1. git branch 列出可用的分支
@@ -48,16 +51,18 @@ shift+: q enter
       2.文件名更改,依然可以合并
     ]
 
-5. git log   显示一个分支中提交的更改记录
+5. git log   显示一个分支中提交的更改记录,如果使用 git reset --hard HEAD^ 回退，则回退之前的那些不存在
    git log --oneline   查看历史记录的紧凑简洁的版本
    git log --oneline --graph   查看历史中什么时候出现了分支、合并
    git log --oneline (branchname) ^(otherBranchname)  在不想要看到的分支前放一个 ^,只看branchname不看otherBranchname的记录
    git log --decorate   执行时，我们可以看到我们的标签
 
+   git reflog   显示一个分支中提交的更改记录，每一次的记录，包括回退
+
 6. git tag   给历史记录中的某个重要的一点打上标签
    
    git tag -a v1.0 -m 'v1.0'   命令给最新一次提交打上（HEAD）“v1.0”的标签。 -a 选项意为 “创建一个带注解的标签”,从而使你为标签添加注解 。绝大部分时候都会这么做的。不用 -a 选项也可以执行的，但它不会记录这标签是啥时候打的，谁打的，也不会让你添加个标签的注解
-   git tag -a v0.9 558151a   给提交的 558151a（几个提交之前的事情了） 追加标签 
+   git tag -a v0.9 (commit_id)[ex:558151a]    给提交的 commit_id（几个提交之前的事情了） 追加标签 
    git tag -d v0.1.2   删除标签
 
 // --------------------- 分享与更新项目 --------------------- //
