@@ -1,0 +1,32 @@
+
+
+
+// ------------ 初次运行 Git 前的配置 --------------- //
+1.用户信息,每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录:
+  git config --global user.name "John Doe"
+  git config --global user.email johndoe@ example.com
+2.查看配置信息:
+  git config --list
+
+
+
+// ------------- -------------------- //
+1. git init  把这个目录变成Git可以管理的仓库
+2. git clone [url]
+3. git add 将该文件添加到缓存
+4. git status 查看你的文件在工作目录与缓存的状态 (详细的输出)
+   git status -s (简短的输出)
+5. git diff 显示已写入缓存与已修改但尚未写入缓存的改动的区别
+   git diff --cached #查看已缓存的改动
+   git diff HEAD 查看已缓存的与未缓存的所有改动
+   git diff --stat 显示摘要而非整个 diff
+6. git commit 记录缓存内容的快照
+   git commit -m "注释"   使用 -m 选项以在命令行中提供提交注释
+   git commit -a   自动将在提交前将已记录、修改的文件放入缓存区
+7. git reset HEAD -- file  取消缓存已缓存的内容
+    [
+      如果你想直接执行 git unstage，你可以在 Git 中配置个别名。 执行 git config --global alias.unstage "reset HEAD" 即可。 一旦执行完它，你就可以直接用 git unstage [file] 作为代替了。
+    ]
+8. git rm
+   git rm -f file  会将文件从缓存区和你的硬盘中（工作目录）删除
+   git rm --cached file  在工作目录中留着该文件
