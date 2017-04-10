@@ -2,3 +2,4 @@
 2.change
 3.change2 checkout -- file :
 4. change add checkout -- file
+5. change add reset
