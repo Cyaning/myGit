@@ -40,9 +40,13 @@ shift+: q enter
 3. git branch -d (branchname) 删除分支
 4. git merge 将分支合并到你的当前分支
     [
-      1.合并冲突
-      2.文件名更换
+      1.合并冲突,
+      2.文件名更改,依然可以合并
     ]
+5. git log 显示一个分支中提交的更改记录
+
+
+
 
 
 
