@@ -44,7 +44,8 @@ shift+: q enter
       2.文件名更改,依然可以合并
     ]
 5. git log 显示一个分支中提交的更改记录
-
+   git log --oneline  查看历史记录的紧凑简洁的版本
+   git log --oneline --graph  查看历史中什么时候出现了分支、合并
 
 
 
