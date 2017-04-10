@@ -10,7 +10,7 @@
 
 
 
-// ------------- -------------------- //
+// ---------------  基本快照 -------------------- //
 1. git init  把这个目录变成Git可以管理的仓库
 2. git clone [url]
 3. git add 将该文件添加到缓存
@@ -28,5 +28,12 @@
       如果你想直接执行 git unstage，你可以在 Git 中配置个别名。 执行 git config --global alias.unstage "reset HEAD" 即可。 一旦执行完它，你就可以直接用 git unstage [file] 作为代替了。
     ]
 8. git rm
-   git rm -f file  会将文件从缓存区和你的硬盘中（工作目录）删除
+   git rm file / git rm -f file   会将文件从缓存区和你的硬盘中（工作目录）删除
    git rm --cached file  在工作目录中留着该文件
+
+// -------------------  分支与合并 ---------------------- //
+1. git branch 列出可用的分支
+   git branch (branchname) 创建新分支 
+2. git checkout (branch) 切换到我们要修改的分支
+   git checkout -b (branchname) 创建新分支，并立即切换到它
+
