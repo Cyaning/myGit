@@ -66,6 +66,7 @@ shift+: q enter
    git remote rm [alias]  删除现存的某个别名
 2. git fetch 从远端仓库下载新分支与数据
 3. git pull 从远端仓库提取数据并尝试合并到当前分支
+4. git push [alias] [branch]，就会将你的 [branch] 分支推送成为 [alias] 远端上的 [branch] 分支
 
 
 
