@@ -35,18 +35,28 @@ shift+: q enter
 // -------------------  分支与合并 ---------------------- //
 1. git branch 列出可用的分支
    git branch (branchname) 创建新分支 
+
 2. git checkout (branch) 切换到我们要修改的分支
    git checkout -b (branchname) 创建新分支，并立即切换到它
+
 3. git branch -d (branchname) 删除分支
+
 4. git merge 将分支合并到你的当前分支
     [
       1.合并冲突,
       2.文件名更改,依然可以合并
     ]
-5. git log 显示一个分支中提交的更改记录
-   git log --oneline  查看历史记录的紧凑简洁的版本
-   git log --oneline --graph  查看历史中什么时候出现了分支、合并
 
+5. git log   显示一个分支中提交的更改记录
+   git log --oneline   查看历史记录的紧凑简洁的版本
+   git log --oneline --graph   查看历史中什么时候出现了分支、合并
+   git log --oneline (branchname) ^(otherBranchname)  在不想要看到的分支前放一个 ^,只看branchname不看otherBranchname的记录
+   git log --decorate   执行时，我们可以看到我们的标签
+
+6. git tag   给历史记录中的某个重要的一点打上标签
+   
+   git tag -a v1.0   命令给最新一次提交打上（HEAD）“v1.0”的标签。 -a 选项意为“创建一个带注解的标签”，从而使你为标签添加注解。绝大部分时候都会这么做的。 不用 -a 选项也可以执行的，但它不会记录这标签是啥时候打的，谁打的，也不会让你添加个标签的注解
+   git tag -a v0.9 558151a   给提交的 558151a（几个提交之前的事情了） 追加标签 
 
 
 
