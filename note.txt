@@ -39,7 +39,10 @@ shift+: q enter
    git checkout -b (branchname) 创建新分支，并立即切换到它
 3. git branch -d (branchname) 删除分支
 4. git merge 将分支合并到你的当前分支
-
+    [
+      1.合并冲突
+      2.文件名更换
+    ]
 
 
 
