@@ -69,8 +69,3 @@ shift+: q enter
 4. git push [alias] [branch]，就会将你的 [branch] 分支推送成为 [alias] 远端上的 [branch] 分支
 
 
-
-
-
-
-
