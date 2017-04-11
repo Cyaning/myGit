@@ -1,6 +1,0 @@
-this is another.txt (change),hello world!
-
-[ HOME , LEFT]
-
-'pc : change';
-change Again;
