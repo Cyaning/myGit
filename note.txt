@@ -57,7 +57,6 @@ git clone ssh时出错：
 
 2. git checkout (branch) 切换到我们要修改的分支
    git checkout -b (branchname) 创建新分支，并立即切换到它
-   git checkout -b dev origin/dev  创建远程origin的dev分支到本地
 
 3. git branch -d (branchname) 删除分支
    如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
@@ -92,4 +91,5 @@ git clone ssh时出错：
 3. git pull 从远端仓库提取数据并尝试合并到当前分支   ( git fetch + git merge )
 4. git push [alias] [branch]，就会将你的 [branch] 分支推送成为 [alias] 远端上的 [branch] 分支
 
+   git checkout -b dev origin/dev  创建远程origin的dev分支到本地：git checkout -b [分支名] [远程名]/[分支名]
 
