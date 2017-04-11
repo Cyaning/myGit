@@ -36,6 +36,14 @@ shift+: q enter
 
 9. git checkout -- file  让这个文件回到最近一次 修改（修改内容 或git commit） 时的状态
 
+
+[
+  1. git reset --hard ()  commit
+  2. git reset HEAD -- file  add
+  3. git rm --cached file add
+  4. git checkout -- file
+]
+
 // -------------------  分支与合并 ---------------------- //
 1. git branch 列出可用的分支
    git branch (branchname) 创建新分支 
