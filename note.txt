@@ -38,9 +38,9 @@ shift+: q enter
 
 
 [
-  1. git reset --hard ()  commit
-  2. git reset HEAD -- file  add
-  3. git rm --cached file add
+  1. git reset --hard ()   --->   commit
+  2. git reset HEAD -- file    --->    add
+  3. git rm --cached file   --->   add,commit
   4. git checkout -- file
 ]
 
