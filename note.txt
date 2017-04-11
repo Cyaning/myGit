@@ -34,14 +34,14 @@ shift+: q enter
    git rm file / git rm -f file   会将文件从 缓存区 和你的硬盘中（工作目录）删除
    git rm --cached file  在工作目录中留着该文件
 
-9. git checkout -- file  让这个文件回到最近一次 修改（修改内容 或git commit） 时的状态
+9. git checkout -- file  让这个文件回到最近一次 修改 时的状态, 无论工作区是修改还是删除，都可以“一键还原”
 
 
 [
   1. git reset --hard ()   --->   commit
   2. git reset HEAD -- file    --->    add
   3. git rm --cached file   --->   add,commit
-  4. git checkout -- file
+  4. git checkout -- file   --->   修改内容
 ]
 
 // -------------------  分支与合并 ---------------------- //
