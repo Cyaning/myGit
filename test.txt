@@ -5,3 +5,7 @@
 5. change add reset
 6. change commit
 7. change commit checkout -- file
+
+
+//
+1. add
