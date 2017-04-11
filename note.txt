@@ -5,7 +5,9 @@ shift+: q enter
 // ------------ SSH --------------- //
 ssh-keygen -t rsa -C "youremail@example.com"
 .ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥
-
+git clone ssh时出错：
+  ssh -T git@github.com
+  如果返回是：Permission denied (publickey).那么你可能要在本地ssh-add一下,ssh-add ~/.ssh/youraccount_rsa
 
 // ------------ 初次运行 Git 前的配置 --------------- //
 1.用户信息,每次 Git 提交时都会引用这两条信息，说明是谁提交了更新，所以会随更新内容一起被永久纳入历史记录:
