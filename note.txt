@@ -15,8 +15,10 @@ git clone ssh时出错：
   git config --global user.email johndoe@ example.com
 2.查看配置信息:
   git config --list
-
-
+3.config:
+  git config --global color.ui true
+4.忽略特殊文件: https://github.com/github/gitignore
+  在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去
 
 // ---------------  基本快照 -------------------- //
 1. git init  把这个目录变成Git可以管理的仓库
