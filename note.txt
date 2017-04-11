@@ -63,7 +63,7 @@ ssh-keygen -t rsa -C "youremail@example.com"
       1.合并冲突,
       2.文件名更改,依然可以合并
     ]
-   git merge --no-of
+   git merge --no-of 强制禁用Fast forward模式
 
 5. git log   显示一个分支中提交的更改记录,如果使用 git reset --hard HEAD^ 回退，则回退之前的那些不存在
    git log --oneline   查看历史记录的紧凑简洁的版本
