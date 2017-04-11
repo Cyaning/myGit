@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-1.master hello world!
-=======
-1. test hello w!
->>>>>>> testing
