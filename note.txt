@@ -103,19 +103,22 @@ or  git branch —track <local_branch_name> origin/<remote_branch_name>
   git branch —set-upstream <local_branch_name> origin/<remote_branch_name>
   git branch --set-upstream-to=origin/<remote_branch_name> <local_branch_name>
 
-2.推送本地分支到远程新分支上: 
+3.从远程库中获取某个分支的更新，再与本地指定的分支进行自动merge:
+  git pull <远程库名> <远程分支名>:<本地分支名>  
+
+4.推送本地分支到远程新分支上: 
   git push [远程名] [本地分支名]:[远程分支名] , E: git push origin local_branch:remote_branch
 
-3.删除远程分支remote_branch: 
+5.删除远程分支remote_branch: 
   git push [远程名] :[远程分支名]
   
-4.添加远端库:
+6.添加远端库:
   git remote add <远端库代称> <远端库地址>
   git clone <远端库地址> <目录>   //不需要git init
 
-5.强制远端覆盖本地:
+7.强制远端覆盖本地:
   git fetch --all
   git reset --hard origin/<remote_branch_name>
 
-6.git branch -avv // 查看本地分支与远端分支关系，并且显示分支最新一次提交信息
+8.git branch -avv // 查看本地分支与远端分支关系，并且显示分支最新一次提交信息
   git remote show origin // 查看远端分支间关系
